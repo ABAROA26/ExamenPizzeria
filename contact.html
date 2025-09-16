@@ -37,20 +37,17 @@
       <!-- Empieza contenido -->
 
       <main>
+        <hr />
         <p>
           Nos encontramos en Av. Forjadores #478, La Paz Baja California Sur
         </p>
         <p>Teléfono: (612) 217-2060</p>
 
+        <hr />
         <section>
           <h3>Envíanos un mensaje</h3>
 
-          <form
-            action="contact.html"
-            target="_self"
-            autocomplete="off"
-            method="post"
-          >
+          <form action="index.html" autocomplete="off">
             <label for="nombre">Nombre:</label>
             <br />
             <input
@@ -86,36 +83,55 @@
             <br />
             <label for="Napolitana">Napolitana</label>
             <input
-              type="checkbox"
+              type="radio"
               name="pizza_favorita"
-              id="pizza_favorita"
+              id="Napolitana"
               value="Napolitana"
-            />br
+            />
+
             <label for="Mexicana">Mexicana</label>
             <input
-              type="checkbox"
+              type="radio"
               name="pizza_favorita"
-              id="pizza_favorita"
+              id="Mexicana"
               value="Mexicana"
-            />br
+            />
             <label for="Mariscos">Mariscos</label>
             <input
-              type="checkbox"
+              type="radio"
               name="pizza_favorita"
-              id="pizza_favorita"
+              id="Mariscos"
               value="Mariscos"
-            />br
+            />
             <label for="Hawaiana">Hawaiana</label>
             <input
-              type="checkbox"
+              type="radio"
               name="pizza_favorita"
-              id="pizza_favorita"
+              id="Hawaiana"
               value="Hawaiana"
             />
+            <br />
+
+            <label for=""> Ingrese su mensaje: </label>
+            <textarea name="" id="" placeholder="Ingresa tu mensaje"></textarea>
+            <br />
+            <input type="submit" name="submit" value="Enviar" />
           </form>
         </section>
         <hr />
-        <section></section>
+        <section>
+          <h3>Nuestra Ubicación</h3>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d374.8207527760087!2d-110.3117659522459!3d24.135633293375136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86afd3e545031a93%3A0xed523be5aa330d65!2sLa%20Pizza%20Nostra!5e1!3m2!1ses!2smx!4v1757991478216!5m2!1ses!2smx"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
 
         <!-- CONTENIDO -->
 
