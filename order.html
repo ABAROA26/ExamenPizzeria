@@ -17,7 +17,7 @@
 
     <body>
       <header>
-        <h1>Order</h1>
+        <h1>Ordena Ahora</h1>
       </header>
 
       <!-- Navegación del ssitio web -->
@@ -37,39 +37,15 @@
       <!-- Empieza contenido -->
 
       <main>
-        <h2>Bienvenidos</h2>
-
-        <p>
-          🍕 ¡Pizzería Nuñez en el Corazón de la Ciudad de La Paz listos para
-          deleitar se paladar!
-        </p>
-
-        <img
-          height="300"
-          width="300"
-          alt="Pizza Inicio"
-          title="Presentación de nuestra pizza favorita del menú"
-          src="../assets/img/PizzaInicio.jpg"
-        />
-
         <section>
-          <h2>Adentrate en nuestro Menú</h2>
+          <h2>Nuestras diferentes Pizzas</h2>
 
-          <ul>
-            <li>Pizza Napolitana</li>
-            <li>Pizza Mexicana</li>
-            <li>Pizza de Mariscos</li>
-            <li>Pizza Hawaiana</li>
-          </ul>
-        </section>
-        <hr />
-        <section>
-          <h2>Nuestros Horarios</h2>
           <table>
             <thead>
               <tr>
-                <th>Día</th>
-                <th>Horario</th>
+                <th>Nombre</th>
+                <th>Ingredientes</th>
+                <th>Precio</th>
               </tr>
             </thead>
 
@@ -78,15 +54,99 @@
             </tbody>
 
             <tr>
-              <td>Lunes a Jueves</td>
-              <td>11:30 - 9:00</td>
+              <td>Napolitana</td>
+              <td>Tomate, Mozzarella, Platano, Sal, Alhabaca</td>
+              <td>$165.00</td>
             </tr>
             <tr>
-              <td>Viernes a Domingo</td>
-              <td>12:30 - 23:00</td>
+              <td>Mexicana</td>
+              <td>Tomate, Mozzarella, Frijol, Jalapeño, Chorizo</td>
+              <td>$190.00</td>
+            </tr>
+            <tr>
+              <td>Mariscos</td>
+              <td>Tomate, Mozzarella, Camarón, Arroz, Pulpo</td>
+              <td>$210.00</td>
+            </tr>
+
+            <tr>
+              <td>Hawaiana</td>
+              <td>Tomate, Mozzarella, Piña, Jamón, Champiñon</td>
+              <td>$165.00</td>
             </tr>
           </table>
+
+          <hr />
         </section>
+
+        <section>
+          <h2>Formulario de Pedido</h2>
+
+       <form action="index.html" autocomplete="off"  id="pedido">
+
+          <label for="nombre">Nombre Completo:</label>
+          <br />
+          <input
+            type="text"
+            size="30"
+            name="nombre"
+            maxlength="50"
+            required
+            autofocus
+          />
+          <br />
+          <label for="Dirección">Dirección:</label>
+          <br />
+          <input
+            type="text"
+            size="30"
+            name="Dirección"
+            maxlength="75"
+            required
+            autofocus
+          />
+          <br />
+          <fieldset>
+            <legend>Tamaño de la Pizza:</legend>
+            <label for="chica">Chica</label>
+            <input type="radio" name="tamaño" id="chica" />
+            <br />
+            <label for="mediana">Mediana</label>
+            <input type="radio" name="tamaño" id="mediana" />
+            <br />
+            <label for="Grande">Grande</label>
+            <input type="radio" name="tamaño" id="Grande" />
+            <br />
+            <label for="familiar">Familiar</label>
+            <input type="radio" name="tamaño" id="familiar" />
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Ingredientes extras:</legend>
+            <label for="tomate">Tomate</label>
+            <input type="radio" name="ingrediente" id="tomate" />
+            <br />
+            <label for="champiñon">Champiñon</label>
+            <input type="radio" name="ingrediente" id="champiñon" />
+            <br />
+            <label for="Piña">Piña</label>
+            <input type="radio" name="ingrediente" id="Piña" />
+            <br />
+            <label for="Queso">Queso</label>
+            <input type="radio" name="ingrediente" id="Queso" />
+          </fieldset>
+
+          <label for="cantidad"> Cantidad:</label>
+          <br />
+          <input type="number" size="5" required maxlength="1" />
+          <br />
+          <label for="">Comentarios Adicionales:</label>
+          <br />
+          <textarea name="" id="" required></textarea>
+          <br />
+          <input type="submit" name="submit" value="Enviar pedido" form="pedido" />
+        </form>
+       
 
         <!-- CONTENIDO -->
 
